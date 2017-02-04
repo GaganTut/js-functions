@@ -153,8 +153,8 @@ console.log(checkDifference(difference));
 function checkProduct(){
 	return sum * product;
 }
-
 console.log(checkProduct());
+
 /*
  * #9
  * Function - checkQuotient
@@ -166,7 +166,10 @@ console.log(checkProduct());
  * Console.log your result.  
 */
 
-
+function checkQuotient(){
+	return product * quotient;
+}
+console.log(checkQuotient());
 
 /*
  * #10
