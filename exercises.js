@@ -82,8 +82,11 @@ console.log(difference);
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
-
-
+function multiply(num1, num2){
+	return num1 * num2;
+}
+var product = multiply(firstBang, secondBang);
+console.log(product);
 
 /*
  * #5
