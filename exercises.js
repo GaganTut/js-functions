@@ -135,8 +135,10 @@ console.log(checkSum(sum));
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
-
-
+function checkDifference(x){
+	return "Last night, I dreamt that I ate " + x + " Taco Bell soft tacos.";
+}
+console.log(checkDifference(difference));
 
 /*
  * #8
