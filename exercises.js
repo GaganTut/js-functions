@@ -192,7 +192,17 @@ console.log(checkQuotient());
 */ 
 
 
+var bango3 = 5;
+var bango4 = 10;
+var bango5 = 15;
 
+function addThenSubtract(num1, num2, num3){
+	var sumHere = add(num1, num2);
+	return subtract(num3, sumHere);
+
+}
+
+console.log(addThenSubtract(bango3, bango4, bango5));
 /*
  * #11
  * Function - multiplyThenDivide
