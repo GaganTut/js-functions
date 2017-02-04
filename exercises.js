@@ -276,6 +276,7 @@ function shoeSize(inches){
 	return inches * 2.54;
 }
 console.log(shoeSize(7));
+
 /*
  * #15
  * Function allCaps
@@ -286,8 +287,10 @@ console.log(shoeSize(7));
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
-
-
+function allCaps(str){
+	return str.toUpperCase();
+}
+console.log(allCaps("this should all be uppcased!"));
 /*
  * #16
  * Function oneCap
