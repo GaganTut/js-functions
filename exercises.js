@@ -118,7 +118,10 @@ console.log(quotient);
  * This function will return the string "Mariah Carey has been married `x` amount of times." Where `x` is the value when you invoke the function. Invoke this function using the variable `sum`. 
  * Console.log your result.
 */
-
+function checkSum(x){
+	return "Mariah Carey has been married " + x + " amount of times.";
+}
+console.log(checkSum(sum));
 
 
 /*
