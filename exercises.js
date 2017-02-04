@@ -150,9 +150,11 @@ console.log(checkDifference(difference));
  * This function will multiply the values stored in the sum and product.
  * Console.log your result.  
 */
+function checkProduct(){
+	return sum * product;
+}
 
-
-
+console.log(checkProduct());
 /*
  * #9
  * Function - checkQuotient
