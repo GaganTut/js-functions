@@ -154,7 +154,6 @@ function checkProduct(){
 	return sum * product;
 }
 console.log(checkProduct());
-
 /*
  * #9
  * Function - checkQuotient
@@ -197,8 +196,7 @@ var bango4 = 10;
 var bango5 = 15;
 
 function addThenSubtract(num1, num2, num3){
-	var sumHere = add(num1, num2);
-	return subtract(num3, sumHere);
+	return subtract(add(num1, num2) , num3);
 
 }
 
@@ -290,7 +288,7 @@ console.log(shoeSize(7));
 function allCaps(str){
 	return str.toUpperCase();
 }
-console.log(allCaps("this should all be uppcased!"));
+console.log(allCaps("this should all be uppercased!"));
 /*
  * #16
  * Function oneCap
@@ -298,8 +296,10 @@ console.log(allCaps("this should all be uppcased!"));
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
-
+function oneCap(str){
+	return str[0].toUpperCase() + str.slice(1);
+}
+console.log(oneCap("uppercase only 1 letter please..."));
 
 /*
  * #17
@@ -311,8 +311,11 @@ console.log(allCaps("this should all be uppcased!"));
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-
-
+function verifyDrinkingAge(age){
+	return age >= 21;
+}
+var canDrink = verifyDrinkingAge(19);
+console.log(canDrink);
 
 /**
  * #18
@@ -320,8 +323,13 @@ console.log(allCaps("this should all be uppcased!"));
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
-
-
-
-
+function throwParty(){
+	if (canDrink === true){
+		return "Cheee Hoo! We going to da party!";
+	} else {
+		return "Meh, see you at Starbucks.";
+	}
+}
+var canParty = throwParty();
+console.log(canParty);
 
